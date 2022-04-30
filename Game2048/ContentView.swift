@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    let columns: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        LazyVGrid(columns: columns) {
+            ForEach((0...15), id: \.self) { i in
+                Text("\(i)")
+            }
+        }
+        .frame(width: windowWidth, height: windowHeight)
     }
+    
+    // MARK: - fixed window size
+    let windowWidth : CGFloat = 720
+    let windowHeight : CGFloat = 900
 }
 
 struct ContentView_Previews: PreviewProvider {
