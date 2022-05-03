@@ -12,7 +12,8 @@ struct ContentView: View {
     var body: some View {
         LazyVGrid(columns: columns) {
             ForEach((0...15), id: \.self) { i in
-                Text("\(i)")
+                TileView(value: i)
+                    .frame(width: 50, height: 50)
             }
         }
         .frame(width: windowWidth, height: windowHeight)

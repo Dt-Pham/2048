@@ -11,6 +11,7 @@
 		8C6EE667281CD1B600BC87ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EE666281CD1B600BC87ED /* ContentView.swift */; };
 		8C6EE669281CD1B800BC87ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EE668281CD1B800BC87ED /* Assets.xcassets */; };
 		8C6EE66C281CD1B800BC87ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EE66B281CD1B800BC87ED /* Preview Assets.xcassets */; };
+		8CA9D99E2820D7F70024BA8D /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA9D99D2820D7F70024BA8D /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8C6EE66B281CD1B800BC87ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C6EE66D281CD1B800BC87ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C6EE66E281CD1B800BC87ED /* Game2048.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Game2048.entitlements; sourceTree = "<group>"; };
+		8CA9D99D2820D7F70024BA8D /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		8C6EE663281CD1B600BC87ED /* Game2048 */ = {
 			isa = PBXGroup;
 			children = (
+				8CA9D99C2820D73A0024BA8D /* Views */,
 				8C6EE664281CD1B600BC87ED /* Game2048App.swift */,
 				8C6EE666281CD1B600BC87ED /* ContentView.swift */,
 				8C6EE668281CD1B800BC87ED /* Assets.xcassets */,
@@ -69,6 +72,14 @@
 				8C6EE66B281CD1B800BC87ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CA9D99C2820D73A0024BA8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CA9D99D2820D7F70024BA8D /* TileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6EE667281CD1B600BC87ED /* ContentView.swift in Sources */,
+				8CA9D99E2820D7F70024BA8D /* TileView.swift in Sources */,
 				8C6EE665281CD1B600BC87ED /* Game2048App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
